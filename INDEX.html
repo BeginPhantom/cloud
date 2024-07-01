@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        .service {
+            background: #fff;
+            margin-bottom: 1em;
+            padding: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .service h2 {
+            margin-top: 0;
+        }
+
+        .service p {
+            margin: 0.5em 0 1em;
+        }
+
+        .service button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .service button:hover {
+            background: #005bb5;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cloud Services</h1>
+    </header>
+    <div class="container">
+        <div class="service">
+            <h2>Compute Services</h2>
+            <p>Scalable and reliable compute capacity in the cloud for your workloads.</p>
+            <button onclick="showAlert('Compute Services')">Learn More</button>
+        </div>
+        <div class="service">
+            <h2>Storage Services</h2>
+            <p>Durable, secure, and highly available cloud storage solutions.</p>
+            <button onclick="showAlert('Storage Services')">Learn More</button>
+        </div>
+        <div class="service">
+            <h2>Database Services</h2>
+            <p>Managed databases with high availability, security, and scalability.</p>
+            <button onclick="showAlert('Database Services')">Learn More</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cloud Services, Inc.</p>
+    </footer>
+    <script>
+        function showAlert(service) {
+            alert('You clicked on ' + service);
+        }
+    </script>
+</body>
+</html>
